@@ -36,7 +36,7 @@
         container.style.borderRadius = r + 'px ' + r + 'px 0 0';
 
         // Fixed during expansion & hold; starts at 75vh, moves to center as it expands
-        const startTop = isMobile ? 70 : 78;
+        const startTop = isMobile ? 80 : 84;
         if (scrolled > 10 && scrolled < TOTAL_PX) {
             const topPct = startTop - (startTop - 50) * eased;
             container.style.position  = 'fixed';

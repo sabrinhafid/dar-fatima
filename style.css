@@ -210,7 +210,7 @@ br.mob-br { display: none; }
 /* Image container */
 .ir-container {
     position: fixed;
-    top: 78%;
+    top: 84%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 280px;
@@ -871,7 +871,7 @@ textarea { resize: vertical; min-height: 120px; }
     .hero-title .line-wrap::after { content: ''; }
     .hero-title .line-reveal { display: inline; }
     .hero-sub br { display: none; }
-    .ir-container { top: 64% !important; }
+    .ir-container { top: 80% !important; }
 
     .concept { padding: 6rem 1.5rem; }
 
