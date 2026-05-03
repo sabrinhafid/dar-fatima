@@ -871,7 +871,7 @@ textarea { resize: vertical; min-height: 120px; }
     .hero-title .line-wrap::after { content: ''; }
     .hero-title .line-reveal { display: inline; }
     .hero-sub br { display: none; }
-    .ir-container { top: 80% !important; }
+    .ir-container { top: 75% !important; }
 
     .concept { padding: 6rem 1.5rem; }
 
