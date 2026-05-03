@@ -880,7 +880,9 @@ textarea { resize: vertical; min-height: 120px; }
     .atm-grid { flex-direction: column; height: auto; }
     .atm-cell { min-height: 260px; }
     .atm-cell:hover { flex: 1; filter: brightness(1); }
-    .atm-label { color: rgba(213,194,169,0.75); transform: none; }
+    .atm-cell::after { background: linear-gradient(to bottom, transparent 20%, rgba(0,0,0,0.72) 100%); }
+    .atm-label { color: rgba(213,194,169,0.95); transform: none; font-size: 0.82rem; }
+    .mi.active-desc .mi-desc { opacity: 1; max-height: 150px; }
     .concept-pillars { grid-template-columns: 1fr; gap: 2.5rem; }
 
     .menu-section { padding: 6rem 0; }

@@ -5,8 +5,9 @@
     const irText    = document.getElementById('irText');
     if (!section || !container) return;
 
-    const EXPAND_PX  = 900;   // scroll px to reach full screen
-    const HOLD_PX    = 400;   // px to hold fullscreen before fade-out
+    const isMobile   = window.innerWidth <= 768;
+    const EXPAND_PX  = isMobile ? 500 : 900;
+    const HOLD_PX    = isMobile ? 0   : 400;
     const TOTAL_PX   = EXPAND_PX + HOLD_PX;
 
     const START_W = 280;
@@ -35,7 +36,7 @@
         container.style.borderRadius = r + 'px ' + r + 'px 0 0';
 
         // Fixed during expansion & hold; starts at 75vh, moves to center as it expands
-        const startTop = window.innerWidth <= 768 ? 62 : 78;
+        const startTop = isMobile ? 70 : 78;
         if (scrolled > 10 && scrolled < TOTAL_PX) {
             const topPct = startTop - (startTop - 50) * eased;
             container.style.position  = 'fixed';
@@ -224,6 +225,22 @@ if (menuNav) {
     }, { threshold: 0.1 });
     if (menuSection) menuObs.observe(menuSection);
 }
+
+// === MENU MOBILE — tap to reveal description ===
+if ('ontouchstart' in window) {
+    document.querySelectorAll('.mi').forEach(item => {
+        item.addEventListener('click', function () {
+            const isOpen = this.classList.contains('active-desc');
+            document.querySelectorAll('.mi').forEach(mi => mi.classList.remove('active-desc'));
+            if (!isOpen) this.classList.add('active-desc');
+        });
+    });
+}
+
+// === APOSTROPHE SPACING ===
+document.querySelectorAll('.hero-title, .hero-sub, .section-title, .cs-bio, .concept-desc, .menu-title, .prenota-title').forEach(el => {
+    el.innerHTML = el.innerHTML.replace(/([a-zA-Z\u00C0-\u024F])'([a-zA-Z\u00C0-\u024F])/g, "$1'\u202F$2");
+});
 
 // === FORM ===
 const form = document.getElementById('prenotaForm');
