@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dar Fatima — Cucina Marocchina su Prenotazione</title>
+    <meta name="description" content="Cucina marocchina autentica, preparata su prenotazione e consegnata con cura a casa tua o al tuo evento. Dar Fatima.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,700&family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=42">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon192.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="images/favicon64.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon180.png">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">
+            <img src="images/darfatimalogo.png" alt="Dar Fatima logo" class="nav-logo-img">
+            <span class="nav-logo-text">Dar Fatima</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#concept">Il Concept</a></li>
+            <li><a href="#chi-sono">La mia cucina</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#esperienze">Esperienze</a></li>
+            <li><a href="#come-funziona">Come Funziona</a></li>
+            <li><a href="#atmosfera">L'Atmosfera</a></li>
+        </ul>
+        <a href="#prenota" class="nav-cta">Prenota ora</a>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+    <a href="#concept">Il Concept</a>
+    <a href="#chi-sono">La mia cucina</a>
+    <a href="#menu">Menu</a>
+    <a href="#esperienze">Esperienze</a>
+    <a href="#come-funziona">Come Funziona</a>
+    <a href="#atmosfera">L'Atmosfera</a>
+    <a href="#prenota" class="nav-mobile-cta">Prenota ora</a>
+    <button class="nav-mobile-close" id="navMobileClose">✕</button>
+</div>
+
+<!-- INTRO REVEAL -->
+<section class="intro-reveal" id="introReveal">
+    <div class="ir-text" id="irText">
+        <p>Un viaggio di sapori che porta l'anima del Marocco<br class="mob-br"> fino a te.</p>
+    </div>
+    <div class="ir-container" id="irContainer">
+        <img src="images/hero.png?v=5" class="ir-image" id="irImage" alt="Dar Fatima">
+    </div>
+</section>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-vignette"></div>
+    <div class="hero-content">
+        <p class="hero-tag reveal-up">Cucina Marocchina · Milano e dintorni</p>
+        <div class="hero-star reveal-up" data-delay="0.1">✦</div>
+        <h1 class="hero-title">
+            <span class="line-wrap"><span class="line-reveal">Gesti, profumi e tradizione</span></span>
+            <span class="line-wrap italic-line"><span class="line-reveal" style="--d:0.1s">che prendono forma</span></span>
+            <span class="line-wrap"><span class="line-reveal" style="--d:0.2s">sulla <em class="hero-accent">tua tavola</em>.</span></span>
+        </h1>
+        <p class="hero-sub reveal-up" data-delay="0.55">Cucina marocchina autentica, pensata, preparata<br> e consegnata con cura.</p>
+        <a href="#prenota" class="btn-primary reveal-up" data-delay="0.7">Prenota la tua esperienza</a>
+    </div>
+    <div class="hero-scroll-wrap">
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+    <div class="ticker-track">
+        <span>Cena Privata</span><em>✦</em>
+        <span>Catering per Eventi</span><em>✦</em>
+        <span>Pranzo Aziendale</span><em>✦</em>
+        <span>Ricevimento di Nozze</span><em>✦</em>
+        <span>Box Gastronomica</span><em>✦</em>
+        <span>Compleanno & Anniversari</span><em>✦</em>
+        <span>Cena a Domicilio</span><em>✦</em>
+        <span>Buffet Marocchino</span><em>✦</em>
+        <span>Cena Privata</span><em>✦</em>
+        <span>Catering per Eventi</span><em>✦</em>
+        <span>Pranzo Aziendale</span><em>✦</em>
+        <span>Ricevimento di Nozze</span><em>✦</em>
+        <span>Box Gastronomica</span><em>✦</em>
+        <span>Compleanno & Anniversari</span><em>✦</em>
+        <span>Cena a Domicilio</span><em>✦</em>
+        <span>Buffet Marocchino</span><em>✦</em>
+    </div>
+</div>
+
+<!-- IL CONCEPT -->
+<section class="concept" id="concept">
+    <div class="concept-inner">
+        <div class="concept-intro reveal-up">
+            <p class="section-tag">Il Concept</p>
+            <h2 class="section-title">Catering di cucina<br class="desk-br"> marocchina<br class="mob-br"> a<br class="desk-br"><em>Milano e dintorni.</em></h2>
+            <p class="concept-desc">Un'esperienza che nasce dalla tradizione e si esprime in ogni piatto.</p>
+        </div>
+        <div class="concept-pillars">
+            <div class="pillar reveal-up" data-delay="0.1">
+                <span class="pillar-n">01</span>
+                <h3>Solo su Prenotazione</h3>
+                <p>Ogni piatto viene pensato e preparato esclusivamente per te, nei tempi che garantiscono la massima freschezza e cura.</p>
+            </div>
+            <div class="pillar reveal-up" data-delay="0.2">
+                <span class="pillar-n">02</span>
+                <h3>Preparazione Espressa</h3>
+                <p>Nessun prodotto surgelato. Ingredienti selezionati, ricette originali tramandate, cottura il giorno stesso della consegna.</p>
+            </div>
+            <div class="pillar reveal-up" data-delay="0.3">
+                <span class="pillar-n">03</span>
+                <h3>Consegna Personalizzata</h3>
+                <p>A casa tua, al tuo evento, nella tua location. Curiamo ogni dettaglio dell'esperienza fino all'ultimo momento.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LA MIA CUCINA -->
+<section class="chisono" id="chi-sono">
+    <div class="cs-inner">
+        <span class="section-tag reveal-up">La mia cucina</span>
+        <h2 class="cs-title reveal-up" data-delay="0.1">Sono Fatima<em>.</em></h2>
+        <div class="cs-bio-group">
+            <p class="cs-bio reveal-up" data-delay="0.2">Sono Fatima, cresciuta tra i profumi e i gesti della tradizione marocchina. La mia cucina nasce da lì e prende forma in ogni esperienza che creo.</p>
+            <p class="cs-arabic reveal-up" data-delay="0.28">أهلاً وسهلاً</p>
+            <p class="cs-arabic-trans reveal-up" data-delay="0.33">— Benvenuti —</p>
+            <p class="cs-bio reveal-up" data-delay="0.38">Cucino per farvi vivere qualcosa di autentico, fatto di sapori,<br class="mob-br"> di tempo e di attenzione. Ogni piatto racconta<br class="mob-br"> una storia di accoglienza e di cultura da condividere.</p>
+            <p class="cs-bio reveal-up" data-delay="0.46">Che sia una cena intima o un'occasione speciale, porto con me un modo<br class="mob-br"> di cucinare che va oltre il semplice piatto:<br class="mob-br"> è un invito a scoprire, a sentire, a vivere.</p>
+            <p class="cs-bio cs-bio--last reveal-up" data-delay="0.54"><em>Il Marocco, a tavola.</em></p>
+        </div>
+    </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-section" id="menu">
+    <div class="menu-inner">
+        <div class="menu-head reveal-up">
+            <span class="section-tag-terra">Il Menu</span>
+            <h2 class="menu-title">Dove i sapori<br><em>diventano esperienza.</em></h2>
+            <p class="menu-hint">Passa il cursore su ogni piatto per scoprirne la descrizione</p>
+        </div>
+
+        <div class="menu-nav-wrap">
+            <div class="menu-nav" id="menuNav">
+                <button class="mnav-btn active" data-cat="antipasti">Antipasti</button>
+                <button class="mnav-btn" data-cat="tradizione">Tradizione</button>
+                <button class="mnav-btn" data-cat="tajine">Tajine</button>
+                <button class="mnav-btn" data-cat="couscous">Cous Cous</button>
+                <button class="mnav-btn" data-cat="pane">Pane & Accompagnamenti</button>
+                <button class="mnav-btn" data-cat="dolci">Dolci</button>
+                <button class="mnav-btn" data-cat="te">Tè & Bevande</button>
+            </div>
+        </div>
+
+    </div><!-- /menu-inner -->
+    <div class="menu-panels" id="menuPanels">
+
+            <div class="menu-panel active" id="cat-antipasti">
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/ANTIPASTI%20/Zaalouk%20di%20melanzane.png')"></div><div class="mi-body"><div class="mi-name">Zaalouk di melanzane</div><div class="mi-desc">Melanzane e pomodoro lavorati lentamente con spezie</div></div></div>
+                <div class="mi veg"><div class="mi-img" style="background-image:url('images/menu/ANTIPASTI%20/Taktouka%20di%20peperoni%20e%20pomodoro.png')"></div><div class="mi-body"><div class="mi-name">Taktouka di peperoni e pomodoro</div><div class="mi-desc">Peperoni morbidi con pomodoro e spezie leggere</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/ANTIPASTI%20/Briouat%20croccanti.png.png')"></div><div class="mi-body"><div class="mi-name">Briouat croccanti</div><div class="mi-desc">Sfoglia dorata con ripieni speziati</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/ANTIPASTI%20/Harira%20tradizionale.png')"></div><div class="mi-body"><div class="mi-name">Harira tradizionale</div><div class="mi-desc">Zuppa marocchina con legumi e spezie</div></div></div>
+                <div class="mi veg"><div class="mi-img" style="background-image:url('images/menu/ANTIPASTI%20/Loubia%20speziata.png')"></div><div class="mi-body"><div class="mi-name">Loubia speziata</div><div class="mi-desc">Fagioli bianchi in salsa di pomodoro</div></div></div>
+            </div>
+
+            <div class="menu-panel" id="cat-tradizione">
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/TRADIZIONE/Bastilla%20di%20pollo,%20mandorle%20e%20cannella.png')"></div><div class="mi-body"><div class="mi-name">Bastilla di pollo, mandorle e cannella</div><div class="mi-desc">Sfoglia croccante con pollo speziato e mandorle</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/TRADIZIONE/Bastilla%20di%20pesce.png')"></div><div class="mi-body"><div class="mi-name">Bastilla di pesce</div><div class="mi-desc">Sfoglia sottile con ripieno di pesce e spezie</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/TRADIZIONE/Rfissa%20con%20pollo%20e%20lenticchie.png')"></div><div class="mi-body"><div class="mi-name">Rfissa con pollo e lenticchie</div><div class="mi-desc">Pollo speziato con lenticchie e pane tradizionale</div></div></div>
+            </div>
+
+            <div class="menu-panel" id="cat-tajine">
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/TAJINE/Tajine%20Pollo%20e%20olive%E2%80%A8Pollo.png')"></div><div class="mi-body"><div class="mi-name">Pollo e olive</div><div class="mi-desc">Pollo cotto lentamente con olive</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/TAJINE/Tajine%20Agnello,%20prugne%20e%20mandorle.png')"></div><div class="mi-body"><div class="mi-name">Agnello, prugne e mandorle</div><div class="mi-desc">Agnello con prugne, mandorle e spezie</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/TAJINE/Kefta%20con%20uova.png')"></div><div class="mi-body"><div class="mi-name">Kefta con uova</div><div class="mi-desc">Polpette in salsa di pomodoro con uova</div></div></div>
+                <div class="mi veg"><div class="mi-img" style="background-image:url('images/menu/TAJINE/tajinevegetariano.png')"></div><div class="mi-body"><div class="mi-name">Verdure e ceci</div><div class="mi-desc">Verdure con ceci e spezie</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/TAJINE/tajineManzo%20e%20verdure.png')"></div><div class="mi-body"><div class="mi-name">Manzo e verdure</div><div class="mi-desc">Manzo cotto lentamente con verdure</div></div></div>
+            </div>
+
+            <div class="menu-panel" id="cat-couscous">
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/COUSCOUS/Cous%20Couspollo%20e%20verdure.png')"></div><div class="mi-body"><div class="mi-name">Tradizionale con pollo e verdure</div><div class="mi-desc">Con brodo speziato e verdure</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/COUSCOUS/couscous%20agnello.png')"></div><div class="mi-body"><div class="mi-name">Agnello</div><div class="mi-desc">Con agnello e verdure</div></div></div>
+                <div class="mi veg"><div class="mi-img" style="background-image:url('images/menu/COUSCOUS/couscous%20vegetariano.png')"></div><div class="mi-body"><div class="mi-name">Verdure</div><div class="mi-desc">Con verdure di stagione</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/COUSCOUS/couscousroyal.png')"></div><div class="mi-body"><div class="mi-name">Royal</div><div class="mi-desc">Con diverse carni e verdure</div></div></div>
+            </div>
+
+            <div class="menu-panel" id="cat-pane">
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/PANE%20E%20ACCOMPAGNAMENTI/Khobz%20tradizionale.png')"></div><div class="mi-body"><div class="mi-name">Khobz tradizionale</div><div class="mi-desc">Pane marocchino da condividere</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/PANE%20E%20ACCOMPAGNAMENTI/Baghrir%20al%20miele.png')"></div><div class="mi-body"><div class="mi-name">Baghrir al miele</div><div class="mi-desc">Pane soffice servito con miele</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/PANE%20E%20ACCOMPAGNAMENTI/Msemen%20sfogliato.png')"></div><div class="mi-body"><div class="mi-name">Msemen sfogliato</div><div class="mi-desc">Pane a strati cotto in padella</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/PANE%20E%20ACCOMPAGNAMENTI/Batbout.png')"></div><div class="mi-body"><div class="mi-name">Batbout</div><div class="mi-desc">Pane marocchino morbido cotto in padella</div></div></div>
+                <div class="mi veg"><div class="mi-img" style="background-image:url('images/menu/PANE%20E%20ACCOMPAGNAMENTI/Olive%20speziate.png')"></div><div class="mi-body"><div class="mi-name">Olive speziate</div><div class="mi-desc">Olive condite con spezie</div></div></div>
+                <div class="mi veg"><div class="mi-img" style="background-image:url('images/menu/PANE%20E%20ACCOMPAGNAMENTI/Carote%20alla%20chermoula.png')"></div><div class="mi-body"><div class="mi-name">Carote alla chermoula</div><div class="mi-desc">Carote con spezie, aglio e limone</div></div></div>
+                <div class="mi veg"><div class="mi-img" style="background-image:url('images/menu/PANE%20E%20ACCOMPAGNAMENTI/Insalata%20marocchina.png')"></div><div class="mi-body"><div class="mi-name">Insalata marocchina</div><div class="mi-desc">Pomodori, cetrioli, cipolla e prezzemolo, conditi con olio d'oliva e limone</div></div></div>
+            </div>
+
+            <div class="menu-panel" id="cat-dolci">
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/DOLCI/Chebakia%20al%20miele.png')"></div><div class="mi-body"><div class="mi-name">Chebakia al miele</div><div class="mi-desc">Dolce fritto con miele e sesamo</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/DOLCI/Corna%20di%20gazzella.png')"></div><div class="mi-body"><div class="mi-name">Corna di gazzella</div><div class="mi-desc">Dolci con mandorle</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/DOLCI/Briouat%20dolci%20alle%20mandorle.png')"></div><div class="mi-body"><div class="mi-name">Briouat dolci alle mandorle</div><div class="mi-desc">Sfoglia con mandorle e miele</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/DOLCI/Sellou%20tradizionale.png')"></div><div class="mi-body"><div class="mi-name">Sellou tradizionale</div><div class="mi-desc">A base di mandorle e sesamo</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/DOLCI/Ghoriba.png')"></div><div class="mi-body"><div class="mi-name">Ghoriba</div><div class="mi-desc">Biscotti tradizionali a base di semola</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/DOLCI/Fekkas.png')"></div><div class="mi-body"><div class="mi-name">Fekkas</div><div class="mi-desc">Biscotti secchi con mandorle, perfetti con il tè</div></div></div>
+            </div>
+
+            <div class="menu-panel" id="cat-te">
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/T%C3%A8%20%26%20Bevande/T%C3%A8%20marocchino%20alla%20menta.png')"></div><div class="mi-body"><div class="mi-name">Tè marocchino alla menta</div><div class="mi-desc">Tè verde con menta fresca</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/T%C3%A8%20%26%20Bevande/Succo%20di%20avocado.png')"></div><div class="mi-body"><div class="mi-name">Succo di avocado</div><div class="mi-desc">Frullato cremoso di avocado e latte, con note di frutta secca e datteri</div></div></div>
+                <div class="mi"><div class="mi-img" style="background-image:url('images/menu/T%C3%A8%20%26%20Bevande/Latte%20ai%20datteri.png')"></div><div class="mi-body"><div class="mi-name">Latte ai datteri</div><div class="mi-desc">Bevanda dolce e avvolgente a base di latte e datteri</div></div></div>
+            </div>
+
+    </div><!-- /menu-panels -->
+
+    <div class="menu-inner">
+        <div class="menu-cta reveal-up">
+            <p>Il menu viene personalizzato in base ad occasione,<br class="mob-br"> numero di ospiti e intolleranze alimentari.</p>
+            <a href="#prenota" class="btn-primary">Crea il tuo menu</a>
+        </div>
+    </div>
+</section>
+
+<!-- ESPERIENZE -->
+<section class="esperienze" id="esperienze">
+    <div class="esp-header reveal-up">
+        <p class="section-tag">Esperienze su Misura</p>
+    </div>
+    <div class="esp-inner">
+
+        <div class="esp-left reveal-up">
+            <h2 class="section-title">Un'esperienza<br class="desk-br"> di cucina<br>marocchina,<br class="desk-br"> da vivere dove<br class="mob-br"> e<br class="desk-br"> <em>quando desideri.</em></h2>
+            <a href="#prenota" class="esp-cta-box">Organizza la tua esperienza →</a>
+        </div>
+
+        <div class="esp-right">
+            <div class="esp-item reveal-up" data-delay="0.08">
+                <span class="esp-n">01</span>
+                <div class="esp-body">
+                    <h3>Cena Privata</h3>
+                    <p>Un'atmosfera da riad a casa tua. Tavola apparecchiata, musica e un menu costruito insieme per una serata indimenticabile.</p>
+                </div>
+            </div>
+            <div class="esp-item reveal-up" data-delay="0.18">
+                <span class="esp-n">02</span>
+                <div class="esp-body">
+                    <h3>Catering per Eventi</h3>
+                    <p>Matrimoni, feste, ricevimenti aziendali. La cucina marocchina diventa il cuore del tuo evento, con cura in ogni dettaglio.</p>
+                </div>
+            </div>
+            <div class="esp-item reveal-up" data-delay="0.28">
+                <span class="esp-n">03</span>
+                <div class="esp-body">
+                    <h3>Box Degustazione</h3>
+                    <p>Una selezione curata di specialità marocchine, confezionata con cura per essere vissuta come regalo o esperienza gastronomica.</p>
+                </div>
+            </div>
+            <div class="esp-item reveal-up" data-delay="0.38">
+                <span class="esp-n">04</span>
+                <div class="esp-body">
+                    <h3>Occasioni Speciali</h3>
+                    <p>Compleanni, anniversari, sorprese. Costruiamo insieme un'esperienza che vada oltre la semplice cena.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- COME FUNZIONA -->
+<section class="come-funziona" id="come-funziona">
+    <div class="cf-inner">
+        <div class="cf-header reveal-up">
+            <p class="section-tag-terra">Come Funziona</p>
+            <h2 class="section-title-dark">Semplice, curato,<br><em>su misura per te.</em></h2>
+        </div>
+        <div class="cf-steps">
+            <div class="cf-step reveal-up" data-delay="0.05">
+                <div class="step-n">01</div>
+                <div class="step-body">
+                    <h3>Scegli il tuo menu</h3>
+                    <p>Contattaci via WhatsApp o attraverso il form.<br class="mob-br"> Ti ascoltiamo, capiamo le tue preferenze e<br class="mob-br"> costruiamo il menu ideale per la tua occasione.</p>
+                </div>
+            </div>
+            <div class="cf-step reveal-up" data-delay="0.15">
+                <div class="step-n">02</div>
+                <div class="step-body">
+                    <h3>Prenota e conferma</h3>
+                    <p>Fissiamo data, luogo e orario di consegna.<br class="mob-br"> La preparazione inizia solo dopo la tua prenotazione,<br class="mob-br"> per garantire freschezza assoluta.</p>
+                </div>
+            </div>
+            <div class="cf-step reveal-up" data-delay="0.25">
+                <div class="step-n">03</div>
+                <div class="step-body">
+                    <h3>Ricevi la tua esperienza</h3>
+                    <p>Consegniamo direttamente a casa tua<br class="mob-br"> o nella tua location. Ogni piatto arriva caldo,<br class="mob-br"> curato nei dettagli, pronto per essere vissuto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ATMOSFERA -->
+<section class="atmosfera" id="atmosfera">
+    <div class="atm-header reveal-up">
+        <p class="section-tag">L'Atmosfera</p>
+        <h2 class="section-title">Il viaggio inizia<br><em>con il primo profumo.</em></h2>
+    </div>
+    <div class="atm-grid">
+        <div class="atm-cell" style="background-image:url('images/l%27atmosfera/latavola.png')">
+            <span class="atm-label">La Tavola</span>
+        </div>
+        <div class="atm-cell" style="background-image:url('images/l%27atmosfera/lespezie.png')">
+            <span class="atm-label">Le Spezie</span>
+        </div>
+        <div class="atm-cell" style="background-image:url('images/l%27atmosfera/coloriepattern.png')">
+            <span class="atm-label">Colori e Pattern</span>
+        </div>
+        <div class="atm-cell" style="background-image:url('images/l%27atmosfera/lelanterne.png')">
+            <span class="atm-label">Le Lanterne</span>
+        </div>
+        <div class="atm-cell" style="background-image:url('images/l%27atmosfera/mise%20en%20place.png')">
+            <span class="atm-label">Mise en Place</span>
+        </div>
+    </div>
+</section>
+
+<!-- PRENOTA / CONTATTI -->
+<section class="prenota" id="prenota">
+    <div class="prenota-inner">
+        <div class="prenota-text reveal-up">
+            <p class="section-tag">Prenota</p>
+            <h2 class="prenota-title">Organizza<br class="desk-br"> la tua<br><em>esperienza marocchina.</em></h2>
+            <p class="prenota-sub">Scrivi un messaggio per raccontarci la tua occasione.<br>Ti risponderemo entro 24 ore per costruire insieme<br>il tuo menu su misura.</p>
+            <a href="https://wa.me/393348113940" class="wa-prenota" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                Scrivici su WhatsApp
+            </a>
+            <div class="prenota-contacts reveal-up" data-delay="0.3">
+                <a href="tel:+393348113940" class="prenota-contact-item">
+                    <span class="pc-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.6 1.31h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.98-.98a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </span>
+                    <span>+39 334 811 3940</span>
+                </a>
+                <a href="mailto:darfatima@gmail.com" class="prenota-contact-item">
+                    <span class="pc-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 8 10 6 10-6"/></svg>
+                    </span>
+                    <span>darfatima@gmail.com</span>
+                </a>
+            </div>
+        </div>
+        <div class="prenota-form reveal-up" data-delay="0.2">
+            <form id="prenotaForm">
+                <div class="fg">
+                    <label for="nome">Nome e Cognome</label>
+                    <input type="text" id="nome" placeholder="Il tuo nome" required>
+                </div>
+                <div class="fg">
+                    <label for="tel">Telefono / WhatsApp</label>
+                    <input type="tel" id="tel" placeholder="+39 340 000 0000" required>
+                </div>
+                <div class="fg">
+                    <label for="occasione">Tipo di occasione</label>
+                    <select id="occasione">
+                        <option value="">Seleziona</option>
+                        <option>Cena privata</option>
+                        <option>Evento / Catering</option>
+                        <option>Box degustazione</option>
+                        <option>Occasione speciale</option>
+                        <option>Altro</option>
+                    </select>
+                </div>
+                <div class="fg-row">
+                    <div class="fg">
+                        <label for="data">Data desiderata</label>
+                        <input type="date" id="data">
+                    </div>
+                    <div class="fg">
+                        <label for="ospiti">N° ospiti</label>
+                        <input type="number" id="ospiti" placeholder="es. 6" min="1">
+                    </div>
+                </div>
+                <div class="fg">
+                    <label for="msg">Raccontaci la tua occasione</label>
+                    <textarea id="msg" rows="4" placeholder="Dicci qualcosa sulla tua occasione, preferenze, allergie o richieste speciali…"></textarea>
+                </div>
+                <button type="submit" class="btn-submit-prenota">Invia la tua richiesta</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <p class="footer-logo">✦ Dar Fatima</p>
+            <p class="footer-tagline">Cucina Marocchina su Prenotazione · Milano e dintorni</p>
+        </div>
+        <div class="footer-contacts">
+            <a href="tel:+393348113940" class="footer-contact">+39 334 811 3940</a>
+            <a href="mailto:darfatima@gmail.com" class="footer-contact">darfatima@gmail.com</a>
+        </div>
+        <p class="footer-copy">© 2026 Dar Fatima · Tutti i diritti riservati<br>P.IVA in fase di registrazione · Solo su prenotazione</p>
+    </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/393348113940" class="wa-float" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    <span>Prenota ora</span>
+</a>
+
+<script src="script.js?v=8"></script>
+</body>
+</html>
