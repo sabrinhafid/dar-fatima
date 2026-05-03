@@ -809,6 +809,7 @@ textarea { resize: vertical; min-height: 120px; }
     background: linear-gradient(110deg, #C8AA7A 0%, #EED9A8 45%, #F5E8C0 55%, #C8AA7A 100%);
     background-size: 250% 100%; background-position: 100% 0;
     color: var(--night); padding: 1.15rem; border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
     transition: background-position 0.55s ease;
 }
 .btn-submit-prenota:hover { background-position: 0% 0; }
