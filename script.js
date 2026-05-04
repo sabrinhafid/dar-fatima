@@ -3,7 +3,6 @@
     const section   = document.getElementById('introReveal');
     const container = document.getElementById('irContainer');
     const irText    = document.getElementById('irText');
-    const overlay   = document.getElementById('irOverlay');
     if (!section || !container) return;
 
     const isMobile   = window.innerWidth <= 768;
@@ -51,16 +50,6 @@
             container.style.left      = '50%';
             container.style.transform = 'translate(-50%, -50%)';
             container.style.opacity   = '1';
-        }
-
-        // Overlay: cream background covering the page — fades out as image expands
-        if (overlay) {
-            if (scrolled > TOTAL_PX) {
-                overlay.style.display = 'none';
-            } else {
-                overlay.style.display = '';
-                overlay.style.opacity = Math.max(1 - eased * 2, 0);
-            }
         }
 
         // Text: visible at start, fades out as image expands
