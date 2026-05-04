@@ -218,7 +218,9 @@ br.mob-br { display: none; }
     border-radius: 140px 140px 0 0;
     overflow: hidden;
     z-index: 9;
-    will-change: width, height, border-radius;
+    will-change: width, height, border-radius, opacity;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 .ir-image {
     width: 100%;

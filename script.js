@@ -59,11 +59,11 @@
             irText.style.display   = scrolled > TOTAL_PX ? 'none' : '';
         }
 
-        // Fade out after hold
+        // Fade out after hold — no CSS transition, scroll drives opacity directly
         if (scrolled > TOTAL_PX) {
             const fadeProgress = Math.min((scrolled - TOTAL_PX) / 200, 1);
             container.style.opacity    = 1 - fadeProgress;
-            container.style.transition = 'opacity 0.3s';
+            container.style.transition = 'none';
             if (fadeProgress >= 1) {
                 container.style.display = 'none';
             }
@@ -74,7 +74,12 @@
         }
     }
 
-    window.addEventListener('scroll', update, { passive: true });
+    let rafPending = false;
+    window.addEventListener('scroll', () => {
+        if (rafPending) return;
+        rafPending = true;
+        requestAnimationFrame(() => { update(); rafPending = false; });
+    }, { passive: true });
     update();
 })();
 
