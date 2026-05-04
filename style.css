@@ -585,7 +585,7 @@ body.menu-open { overflow: hidden; }
 
 /* Custom cursor */
 body { cursor: url('images/cursor.png') 24 48, default !important; }
-a, button, [role="button"], select, label, .mnav-btn, .atm-cell { cursor: url('images/cursor.png') 24 48, pointer !important; }
+a, button, [role="button"], select, label, .mnav-btn, .atm-cell { cursor: url('images/cursor.png') 24 24, pointer !important; }
 input, textarea { cursor: text !important; }
 .btn-text-terra {
     font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em;
