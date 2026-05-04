@@ -863,7 +863,7 @@ textarea { resize: vertical; min-height: 120px; }
     html { font-size: 16px; }
     .intro-reveal { height: calc(100vh + 160px); }
 
-    .nav-inner { padding: 1.2rem 1.5rem; justify-content: flex-end; gap: 0.9rem; }
+    .nav-inner { padding: 1.2rem 1.5rem 1.2rem 0.6rem; }
     .nav-links, .nav-cta { display: none; }
     .nav-hamburger { display: flex; }
 
