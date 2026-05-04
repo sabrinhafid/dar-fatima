@@ -8,6 +8,9 @@
     const isMobile   = window.innerWidth <= 768;
     const EXPAND_PX  = isMobile ? 500 : 900;
     const HOLD_PX    = isMobile ? 0   : 400;
+
+    // Use actual visible height (window.innerHeight) so hero is hidden at scroll=0 on iOS Safari
+    if (isMobile) section.style.height = (window.innerHeight + 160) + 'px';
     const TOTAL_PX   = EXPAND_PX + HOLD_PX;
 
     const START_W = 280;
