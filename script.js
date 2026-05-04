@@ -202,6 +202,11 @@ function showMenuPanel(catId) {
     panel.scrollLeft = 0;
     panel.querySelectorAll('.mi').forEach((item, i) => {
         item.style.setProperty('--i', i);
+        // Lazy-load image on first open
+        const img = item.querySelector('.mi-img');
+        if (img && img.dataset.bg && !img.style.backgroundImage) {
+            img.style.backgroundImage = img.dataset.bg;
+        }
         setTimeout(() => item.classList.add('in'), i * 60);
     });
 }
