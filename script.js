@@ -60,8 +60,9 @@
         }
 
         // Fade out after hold — no CSS transition, scroll drives opacity directly
+        const FADE_PX = isMobile ? 80 : 200;
         if (scrolled > TOTAL_PX) {
-            const fadeProgress = Math.min((scrolled - TOTAL_PX) / 200, 1);
+            const fadeProgress = Math.min((scrolled - TOTAL_PX) / FADE_PX, 1);
             container.style.opacity    = 1 - fadeProgress;
             container.style.transition = 'none';
             if (fadeProgress >= 1) {

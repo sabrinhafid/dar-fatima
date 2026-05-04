@@ -861,7 +861,7 @@ textarea { resize: vertical; min-height: 120px; }
 /* === MOBILE === */
 @media (max-width: 768px) {
     html { font-size: 16px; }
-    .intro-reveal { height: 700px; }
+    .intro-reveal { height: 580px; }
 
     .nav-inner { padding: 1.2rem 1.5rem; }
     .nav-links, .nav-cta { display: none; }
