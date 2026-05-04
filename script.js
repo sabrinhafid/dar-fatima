@@ -261,6 +261,25 @@ const form = document.getElementById('prenotaForm');
 if (form) {
     form.addEventListener('submit', e => {
         e.preventDefault();
+        const nome      = document.getElementById('nome')?.value || '';
+        const tel       = document.getElementById('tel')?.value || '';
+        const occasione = document.getElementById('occasione')?.value || '';
+        const data      = document.getElementById('data')?.value || '';
+        const ospiti    = document.getElementById('ospiti')?.value || '';
+        const msg       = document.getElementById('msg')?.value || '';
+
+        const subject = encodeURIComponent('Richiesta prenotazione – ' + nome);
+        const body = encodeURIComponent(
+            'Nome: ' + nome + '\n' +
+            'Telefono/WhatsApp: ' + tel + '\n' +
+            'Tipo di occasione: ' + occasione + '\n' +
+            'Data desiderata: ' + data + '\n' +
+            'N° ospiti: ' + ospiti + '\n\n' +
+            'Messaggio:\n' + msg
+        );
+
+        window.location.href = 'mailto:darfatimacatering@gmail.com?subject=' + subject + '&body=' + body;
+
         const btn = form.querySelector('.btn-submit-prenota');
         btn.textContent = 'Richiesta inviata ✓';
         btn.style.background = '#1B4332';
